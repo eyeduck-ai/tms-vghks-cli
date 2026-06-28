@@ -1,0 +1,6 @@
+DEFAULT_NEUTRAL_SURVEY_TEXT = "無"
+
+
+__all__ = [
+    "DEFAULT_NEUTRAL_SURVEY_TEXT",
+]

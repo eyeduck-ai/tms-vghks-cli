@@ -1,0 +1,26 @@
+# Copy this file to .tms_accounts.toml and replace the placeholder values.
+# Keep .tms_accounts.toml private; it is ignored by git.
+
+# Captcha recognition tries local PaddleOCR SDK first, then PaddleOCR API if
+# [ocr].paddleocr_api_token is configured, then interactive manual fallback.
+# Install local OCR dependencies with:
+#   uv sync --extra ocr-sdk
+#
+# [ocr]
+# paddleocr_api_token = "YOUR_AISTUDIO_TOKEN"
+
+# Optional. Used by --quiz auto only when the local question bank has no match.
+# If omitted, quiz auto falls back to the built-in deterministic heuristic.
+# [gemini]
+# api_key = "GEMINI_API_KEY"
+# model = "gemini-3.5-flash"
+
+[[accounts]]
+label = "account1"
+account = "EMPLOYEE_ID_1"
+password = "PASSWORD_1"
+
+[[accounts]]
+label = "account2"
+account = "EMPLOYEE_ID_2"
+password = "PASSWORD_2"
