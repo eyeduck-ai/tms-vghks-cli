@@ -28,12 +28,6 @@ account = "EMPLOYEE_ID"
 password = "PASSWORD"
 ```
 
-`sign-in` 會登入並儲存本機 session。`go --dry-run` 只預覽將處理的課程，不會完成課程或送出資料。`go --quiz auto` 會開始全自動完成待完成課程，包含閱讀/影片時間、問卷與測驗。`pending` 是可選的人工檢查，不是執行 `go` 前的必要步驟。
-
-`go` 預設使用 requests backend。閱讀/影片項目會等待必要時間並在完成後驗證進度。`--quiz auto` 會優先使用可信題庫答案，其次使用已設定的 Gemini，最後才使用 deterministic heuristic。保守預設是 `--quiz confirm`。
-
-`.tms_accounts.toml`、`.tms_session/`、captcha 圖片、cookies 與 private exports 都會被 git 忽略。Root 層的 `question-bank-YYYYMMDD.jsonl` 是可共享的 rich question bank；通過 `bank build` 隱私檢查後可以提交。
-
 ## 可選功能
 
 ```powershell
